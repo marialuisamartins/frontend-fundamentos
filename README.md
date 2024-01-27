@@ -69,4 +69,4 @@ Fluxo do dia a dia
 2. git add.
 3. git commit -m "Informações que você quer passar"
 4. git pull
-5. git pull
+5. git push
