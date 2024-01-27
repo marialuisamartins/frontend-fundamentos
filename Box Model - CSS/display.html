@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Propriedade Display</title>
+    <meta name="description" content="Propriedade display - em linha, bloco...">
+    <meta name="author" content="malu.martins.br@gmail.com">
+    <meta name="keywords" content="html, css">
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        p{
+            width: 50%;
+            background-color: #ccc;
+        }
+        h1{
+            border: 2px solid red;
+            width: 25%;
+        }
+        a{
+            background-color: yellow;
+            width: 200px;
+            /* Não faz diferença, elementos de linha não recebem
+            propriedades de elementos de bloco */
+            margin-bottom: 70%;
+            margin-left: 60%;
+            /* Margem pode ser aplicada na horizontal, mas não na vertical */
+            padding: 10px;
+            /* Não é bem aplicado */
+        }
+        b{
+            padding: 25px;
+            background-color: #cd7777;
+            display: inline-block;
+            visibility: hidden;
+        }
+        strong{
+            background-color: #cd7777;
+            display: block;
+            height: 60px;
+            width: 50%; 
+            /* 50% do parágrafo */
+        }
+        em{
+            display: none;
+            /* apaga o conteúdo */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Box sizing</h1>
+
+    <p>A seguir iremos inserir elementos inline lorem ipsum dolor sit amet. <a href="boxModel.html"> Box Model arquivo</a> amet consectetur adipisicing elit. Fugit dolorem libero nesciunt molestiae eum mollitia amet consectetur adipisicing elit. Fugit dolorem libero nesciunt molestiae eum mollitia <b>texto em negrito com &lt;b&gt;</b> laboriosam molestias repellendus dolor id, tenetur amet consectetur adipisicing elit. Fugit dolorem libero nesciunt molestiae eum mollitia <strong>texto em negrito com strong</strong> maiores nihil ut cupiditate amet consectetur adipisicing elit. Fugit dolorem libero nesciunt molestiae eum mollitia <em>texto em itálico com em</em> aut laudantium asperiores, architecto sapiente, exercitationem vel amet consectetur adipisicing elit. Fugit dolorem libero nesciunt molestiae eum mollitia <i>texto em itálico com i</i> repellat! Neque deserunt nesciunt debitis, dolore a praesentium dolores impedit unde cupiditate hic corporis explicabo dicta labore laudantium omnis natus doloribus! Dicta consectetur, eaque sit quo magni hic pariatur excepturi mollitia atque dolor voluptatibus ipsa facere facilis tenetur! Aspernatur vitae corrupti necessitatibus dicta itaque? Deserunt modi ad quos, voluptas non corporis quod possimus, nam voluptatibus at assumenda numquam et similique, unde iusto? Totam, iste iure. Maiores, unde quos.</p>
+
+</body>
+
+</html>

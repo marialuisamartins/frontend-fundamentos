@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(160, 176, 228);
+}
+
+h1{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Lista de fontes que tentarão ser aplicadas; */
+    font-size: 56px;
+}
+
+h2{
+    font-size: 48px;
+    font-style: italic;
+    font-weight: normal;
+    /*retira o negrito que vem por padrão na tag h2*/
+}
+
+h3{
+    font-size: 40px;
+    font-style: oblique;
+    /* Um itálico menos intenso, não é diferente
+    dependendo da fonte utilizada; */
+    text-decoration: underline;
+    background-color:cyan;
+}
+
+h4{
+    font-size: 32px;
+    text-transform: lowercase;
+    text-align: center;
+    color: #0F0;
+    /* Simplificação do código RGB para
+    código duplicado como #00FF00 ; */
+}
+
+p{
+    font-size: 28px;
+    text-align: justify;
+    text-indent: 58px;
+    /* Espaço antes da primeira linha do parágrafo; */
+    color: gray;
+    font-variant: small-caps;
+    /* Texto em caps com diferenciação de maiúscula; */
+}
+
+a{
+    text-decoration: none;
+    font-variant: normal;
+    /* Remove o sublinhado do link; */
+}
+
+.destaque{
+    color: #316e22;
+    font-weight: bold;
+}
+
+#titulo{
+    color: #976200;
+}

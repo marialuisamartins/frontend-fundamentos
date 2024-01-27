@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Intro a Box Model</title>
+    <meta name="description" content="Box Model - Introdução">
+    <meta name="author" content="malu.martins.br@gmail.com">
+    <meta name="keywords" content="html, css">
+
+    <style>
+        
+        body{
+            font-family: sans-serif;
+        }
+
+        p{
+            background-color: #ccc;
+            margin-top: 0;
+            /* gruda no h2 */
+            /* margin: coloca pixels da borda para fora*/
+            text-align: justify;
+        }
+
+        h1{
+            background-color: rgb(255, 175, 175);
+            width: 50%;
+            /* Limita o grifado que antes ia até o fim da página
+            Coloca pixels da borda para dentro
+            Se for em pixels é fixo, se for em % é dinâmico
+            50% é referente ao Body, que é o elemento pai,
+            se aumentar ou diminuir o navegador ela é alterada */
+            height: 50%;
+            /* Não faz diferença na altura, evitar % em height */
+            padding: 16px;
+            /* Coloca pixels de cada lado do conteúdo */
+        }
+
+        h2{
+            background-color: rgb(169, 219, 169);
+            margin-top: 56px;
+        }
+
+        .destaque{
+            background-color: orange;
+        }
+
+        .size{
+            width: 50%;
+            height: 100px;
+        }
+
+        .padding{
+            padding: 26px;
+        }
+
+        .margin{
+            margin: 50px 0 20px 100px;
+        }
+
+        .border{
+            /* border: 5px solid red; */
+            /* border-top: 10px solid red; */
+            border-top-style: dashed;
+            border-top-width: 10px;
+            border-top-color: red;
+            border-right: 12px inset blue;
+            border-bottom: 14px double green;
+            border-left: 16px ridge yellow; 
+            padding: 20px;
+        }
+
+        .outline{
+            outline: 5px dashed red;
+            /* Como se fosse pra fora do elemento, diferente da borda */
+        }
+
+        .border2{
+            border: 5px dashed  green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Box Model</h1>
+
+    <h2>Width e Height</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio quos temporibus iure itaque enim consectetur! Fuga laudantium unde possimus minus dicta, officiis sit repellat eligendi dignissimos, hic obcaecati harum?</p>
+    
+    <p class="destaque size">Lorem ipsum dolor sit.</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+
+    <h2>Padding</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio quos temporibus iure itaque enim consectetur! Fuga laudantium unde possimus minus dicta, officiis sit repellat eligendi dignissimos, hic obcaecati harum?</p>
+    
+    <p class="destaque padding">Parágrafo com padding.</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+
+    <h2>Margin</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio quos temporibus iure itaque enim consectetur! Fuga laudantium unde possimus minus dicta, officiis sit repellat eligendi dignissimos, hic obcaecati harum?</p>
+    
+    <p class="destaque margin">Parágrafo com margem.</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+
+    <h2>Border</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio quos temporibus iure itaque enim consectetur! Fuga laudantium unde possimus minus dicta, officiis sit repellat eligendi dignissimos, hic obcaecati harum?</p>
+    
+    <p class="destaque border">Parágrafo com borda e padding para melhor visualização.</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+    
+    <h2>Outline</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem distinctio quos temporibus iure itaque enim consectetur! Fuga laudantium unde possimus minus dicta, officiis sit repellat eligendi dignissimos, hic obcaecati harum?</p>
+    
+    <p class="destaque outline">Parágrafo com outline.</p>
+    
+    <p class="destaque outline border2">
+        Esse parágrafo contem outline vermelho e borda verde</p>
+    
+    <p>Lorem ipsum dolor sit.</p>
+
+</body>
+</html>

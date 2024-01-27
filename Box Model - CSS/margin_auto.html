@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Margin: auto para centralizar</title>
+    <meta name="description" content="Box Model - Margin: auto">
+    <meta name="author" content="malu.martins.br@gmail.com">
+    <meta name="keywords" content="html, css">
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .marginauto1{
+            background-color: yellow;
+            margin: 30px;
+            width: 100%;
+        }
+        .marginauto2{
+            background-color: yellow;
+            margin: 30px;
+        }
+        .marginauto3{
+            background-color: yellow;
+            width: 50%;
+            margin-left: 25%;
+            /* 25% do lado esquerdo, 50% no conteúdo e 25% do lado direito que sobrou,
+             dando impressão de centralizado */
+        }
+        .marginauto4{
+            background-color: yellow;
+            width: 200px;
+            margin-left: auto;
+            /* o auto pega o espaço que sobra */
+        }
+        .marginauto5{
+            background-color: yellow;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto; 
+            /* centraliza o conteúdo */
+        }
+        p{
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class = "marginauto1">Margin Auto</h1>
+    <h1 class = "marginauto2">Margin Auto</h1>
+    <h1 class = "marginauto3">Margin Auto</h1>
+    <h1 class = "marginauto4">Margin Auto</h1>
+    <h1 class = "marginauto5">Margin Auto</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit dolorem libero nesciunt molestiae eum mollitia laboriosam molestias repellendus dolor id, tenetur maiores nihil ut cupiditate aut laudantium asperiores, architecto sapiente, exercitationem vel repellat! Neque deserunt nesciunt debitis, dolore a praesentium dolores impedit unde cupiditate hic corporis explicabo dicta labore laudantium omnis natus doloribus! Dicta consectetur, eaque sit quo magni hic pariatur excepturi mollitia atque dolor voluptatibus ipsa facere facilis tenetur! Aspernatur vitae corrupti necessitatibus dicta itaque? Deserunt modi ad quos, voluptas non corporis quod possimus, nam voluptatibus at assumenda numquam et similique, unde iusto? Totam, iste iure. Maiores, unde quos.</p>
+
+</body>
+
+</html>

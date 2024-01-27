@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Links</title>
+    <meta name="description" content="Links - tags a no CSS">
+    <meta name="author" content="malu.martins.br@gmail.com">
+    <meta name="keywords" content="html, css">
+
+    <style>
+        
+        h1{
+            font-family: sans-serif;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: red;
+        }
+        /* Quando usado <body>, as tags <a> não ficam vermelhas, 
+            o browser deixa azul por padrão
+            teria que fazer um css pro <body> e um pro <a>
+            ou
+            É possível fazer um css para formatar múltiplas tags:
+            h1, h2, p, a {......} */
+
+        a{
+            display: inline-block;
+            padding: 3px;
+        }
+        
+        a:link{
+            color: darkgreen;
+        }
+
+        a:visited{
+            color: rgb(28, 107, 107);
+        }
+
+        a:hover{
+            background: darkorange;
+        }
+
+        a:active{
+            background-color: hotpink;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1> Links </h1>
+    <h2> Outro título </h2>
+
+    <a href="display.html">Display</a> |
+    <a href="BoxModel.html">Box model</a> |
+    <a href="ashuhsasa.html">Página inexistente</a>
+
+    <p>Veja mais exemplos aqui:
+        <br>
+        <a href="box_sizing.html">Arquivo box sizing</a>
+        <br>
+        <a href="margin_auto.html">Arquivo margin auto</a>
+    </p>
+
+</body>
+
+</html>
