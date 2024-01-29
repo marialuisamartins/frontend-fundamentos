@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="description" content="Usando imagens no HTML">
+    <meta name="author" content="malu.martins.br@gmail.com">
+    <meta name="keywords" content="html, css, imagens">
+    <title>Trabalhando com imagens</title>
+
+<style>
+    .img-logo{
+        width: 300px;
+    }
+
+    .img-html{
+        float: left;
+    }
+
+    .img-css{
+        float: right;
+    }
+
+    body{
+        color: rgb(0, 57, 107);
+        background-color: rgb(161, 161, 161);
+        font-size: 22px;
+        font-family: sans-serif;
+        width: 700px;
+        margin: auto;
+
+        background-image: url(imagens/bg.jpg);
+        /* background-repeat: no-repeat; */
+        /* Impede que a imagem se duplique para preencher o site */
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: right bottom;
+    }
+
+    p{
+        line-height: 2;
+        text-align: justify;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+    <h1>Trabalhando com imagens</h1>
+
+    <h2>Imagens bitmap vs vetoriais</h2>
+
+    <img src="imagens/logo_ser-frontend-ico.png" class="img-logo" alt="Logotipo bitmap">
+
+    <img src="imagens/logo_ser-frontend-ico.svg" class="img-logo" alt="Logotipo vetorial">
+
+    <h2>Imagens transparentes (gif vs png)</h2>
+
+    <img src="imagens/logo_ser-frontend-ico-transparente.gif" class="img-logo" alt="Logotipo gif transparente">
+
+    <img src="imagens/logo_ser-frontend-ico-transparente.png" class="img-logo" alt="Logotipo png transparente">
+
+    <h2>Gif animado</h2>
+
+    <img src="imagens/walk.gif" alt="Animação mulher andando">
+    <p>Fonte: <a href="https://www.pinterest.com/pin/209769295122019504/">https://www.pinterest.com/pin/209769295122019504/</a></p>
+
+    <h2>Float</h2>
+
+    <img src="imagens/html5.png" alt="logotipo HTML5" class="img-html">
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, corporis eum reiciendis quibusdam architecto adipisci accusamus aut qui enim! Fugiat.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ratione rem illum nulla autem, animi officia deleniti eos amet nihil ad eaque error. Magnam animi error dolores accusamus optio consectetur, totam culpa sit quae voluptatibus aliquid harum voluptate tenetur adipisci vero repudiandae omnis. Aperiam deserunt ratione in, sunt amet totam? Iusto quaerat quo veniam ea harum sequi hic eius fugiat aperiam quis, enim facilis vero asperiores temporibus sint? Blanditiis a magni, cupiditate asperiores assumenda delectus id nisi laudantium distinctio earum.</p>
+
+    <img src="imagens/css3.png" alt="logotipo CSS3" class="img-css">
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, corporis eum reiciendis quibusdam architecto adipisci accusamus aut qui enim! Fugiat.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ratione rem illum nulla autem, animi officia deleniti eos amet nihil ad eaque error. Magnam animi error dolores accusamus optio consectetur, totam culpa sit quae voluptatibus aliquid harum voluptate tenetur adipisci vero repudiandae omnis. Aperiam deserunt ratione in, sunt amet totam? Iusto quaerat quo veniam ea harum sequi hic eius fugiat aperiam quis, enim facilis vero asperiores temporibus sint? Blanditiis a magni, cupiditate asperiores assumenda delectus id nisi laudantium distinctio earum.</p>
+    
+</body>
+
+</html>
