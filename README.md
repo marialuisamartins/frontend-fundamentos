@@ -47,7 +47,7 @@ Atualizar o site
 Outros comandos:
 
 Adicionar todos os arquivos da pasta em Stagged Changes
-git add.
+git add .
 
 Se tiverem alterações realizadas no editor online do GitHub
 Para puxar elas para a máquina
@@ -66,7 +66,7 @@ git status
 Fluxo do dia a dia
 
 1. Fazer alterações no arquivo
-2. git add.
+2. git add .
 3. git commit -m "Informações que você quer passar"
 4. git pull
 5. git push

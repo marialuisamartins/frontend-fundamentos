@@ -13,7 +13,7 @@
     <style>
 
         body{
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             width: 80%;
             margin: auto;
             background-color: rgb(212, 212, 212);
@@ -21,50 +21,81 @@
 
         h1{
             color: rgb(12, 12, 63);
-            background-color: rgb(169, 169, 223);
+            background-color: rgb(146, 146, 196);
             padding: 10px;
+            margin-bottom: 0px;
             text-align: center;
         }
 
-        .portifolio{
+        .center{
             text-align: center;
+        }
+
+        .subtitle{
+            background-color: rgb(199, 199, 221);
+            margin-top: 0px;
+        }
+
+        .menu{
+            text-align: right;
+            padding: 10px;
+        }
+
+        .menu li{
+            list-style: none;
+            display: inline-block;
+            /* o li por padrão é um elemento de bloco
+            o inline-block ao invés do inline, respeita a margem */
+            padding: 0px;
+        }
+
+        .menu a{
+            background-color: rgb(199, 199, 199);
+            padding:16px;
+        }
+
+        .menu a:hover{
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
         }
         
         h2{
             color: rgb(25, 25, 119);
             background-color: rgb(197, 197, 197);
-            border-bottom: 2px solid rgb(25, 25, 119);
+            border-bottom: 2px solid;
             padding: 5px;
+            font-size: 36px;
         }
         
         h3{
-            font-size: small;
             color: rgb(44, 44, 44);
+            font-size: 30px;
         }
 
         h4{
-            font-size: small;
             color: rgb(44, 44, 44);
+            font-size: 27px;
         }
 
         p{
-            font-size: small;
             color: rgb(44, 44, 44);
+            font-size: 24px;
         }
 
         ul{
-            font-size: small;
             color: rgb(44, 44, 44);
             padding-left: 0;
+            font-size: 24px;
         }
 
         li{
             list-style-position: inside;
+            font-size: 24px;
         }
 
         a{
             padding: 5px;
-            font-size: medium;
             text-decoration: none;
         }
 
@@ -86,8 +117,14 @@
 
 <body>
     
-    <h1>Maria Luisa Martins Brasil</h1>
-    <p class="portifolio"><a href="https://github.com/marialuisamartins" target="_blank">Acesse meu portifólio</a></p>
+<h1>Maria Luisa Martins Brasil</h1>
+
+<p class="center subtitle"><a href="marialuisamartins.github.io" target="_blank">Link para esse currículo</a></p>
+
+<ul class="menu">
+    <li><a href="https://www.linkedin.com/in/marialuisamartinsb/" target="_blank">Linkedin</a></li>
+    <li><a href="https://github.com/marialuisamartins" target="_blank">GitHub</a></li>
+</ul>
 
 <h2>Objetivo</h2>
 
@@ -96,18 +133,19 @@
 
 <h2>Experiência profissional</h2>
 
-<h3><a href="https://www.labware.com/pt/" target="_blank">LabWare Brasil</a> - Jan 2023 até Dez 2023 - 1 ano<h3>
+<h3><a href="https://www.labware.com/pt/" target="_blank">LabWare Brasil</a> - Jan 2023 até Dez 2023 - 1 ano</h3>
 
-<h4>Estagiária em Consultoria de Projetos Pharma<h4>
+<h4>Estagiária em Consultoria de Projetos Pharma</h4>
+
 <p>Implementação da plataforma ELP para automação e Controle de Qualidade em uma empresa de hemoderivados. Realizou a documentação, configurou o LIMS Basic e ofereceu suporte na implementação do sistema para os clientes. Executou os testes de qualificação operacional de software para garantir a integridade do sistema em uma empresa de cosméticos.</p>
 
 <h2>Formação</h2>
 
-<h3><strong>Bacharelado em Biotecnologia</strong><h3>
+<h3><strong>Bacharelado em Biotecnologia</strong></h3>
 <p>2019 a 2023</p>
 <p>Universidade de São Paulo</p>
 
-<h3><b>Ensino Médio Integrado ao técnico de mecânica</b><h3>
+<h3><b>Ensino Médio Integrado ao técnico de mecânica</b></h3>
 <p>2015 a 2017</p>
 <p>Instituto Federal de São Paulo</p>
 
@@ -119,7 +157,7 @@
     <li>Imersão Excel - Motim Educação</li>
 </ul>
 
-<h3><strong>Cursando: Frontend Fundamentos: HTML, CSS e JS</strong><h3>
+<h4><strong>Cursando: Frontend Fundamentos: HTML, CSS e JS</strong></h4>
 
 </body>
 
