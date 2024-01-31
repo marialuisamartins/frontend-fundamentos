@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Fit content">
+    <meta name="author" content="malu.martins.br@gmail.com">
+    <meta name="keywords" content="html, css, fit content">
+    <title>Fit content</title>
+
+    <style>
+
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item{
+            width: fit-content;
+        }
+
+        .min-content .item{
+            width: min-content;
+        }
+
+        .max-content .item{
+            width: max-content;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container fit-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, numquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus dolore mollitia molestiae praesentium eligendi fugit facilis dolorem. Illum aspernatur quibusdam, dolor fuga quasi blanditiis!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui dolorem perferendis exercitationem reiciendis minima delectus maxime quam beatae tempore laudantium, deserunt commodi eveniet animi, similique dolores optio autem voluptatum adipisci officia vero iusto? Corrupti, omnis temporibus amet numquam id dolores adipisci! Recusandae dolorem in nobis, voluptate esse vitae qui animi corrupti cupiditate dolores asperiores numquam assumenda molestias, repudiandae ea sequi itaque laboriosam nam voluptates, ipsum ad maiores pariatur hic aliquid? Quo nesciunt in reprehenderit!</div>
+    </div>
+
+    <div class="container min-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, numquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus dolore mollitia molestiae praesentium eligendi fugit facilis dolorem. Illum aspernatur quibusdam, dolor fuga quasi blanditiis!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui dolorem perferendis exercitationem reiciendis minima delectus maxime quam beatae tempore laudantium, deserunt commodi eveniet animi, similique dolores optio autem voluptatum adipisci officia vero iusto? Corrupti, omnis temporibus amet numquam id dolores adipisci! Recusandae dolorem in nobis, voluptate esse vitae qui animi corrupti cupiditate dolores asperiores numquam assumenda molestias, repudiandae ea sequi itaque laboriosam nam voluptates, ipsum ad maiores pariatur hic aliquid? Quo nesciunt in reprehenderit!</div>
+    </div>
+
+    <div class="container max-content">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, numquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus dolore mollitia molestiae praesentium eligendi fugit facilis dolorem. Illum aspernatur quibusdam, dolor fuga quasi blanditiis!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure qui dolorem perferendis exercitationem reiciendis minima delectus maxime quam beatae tempore laudantium, deserunt commodi eveniet animi, similique dolores optio autem voluptatum adipisci officia vero iusto? Corrupti, omnis temporibus amet numquam id dolores adipisci! Recusandae dolorem in nobis, voluptate esse vitae qui animi corrupti cupiditate dolores asperiores numquam assumenda molestias, repudiandae ea sequi itaque laboriosam nam voluptates, ipsum ad maiores pariatur hic aliquid? Quo nesciunt in reprehenderit!</div>
+    </div>
+    
+</body>
+</html>

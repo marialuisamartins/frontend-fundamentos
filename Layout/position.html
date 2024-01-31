@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Position">
+    <meta name="author" content="malu.martins.br@gmail.com">
+    <meta name="keywords" content="html, css, position">
+    <title>Position</title>
+
+    <style>
+
+        #div1{
+            background-color: rgba(255, 0, 0, .5);
+            padding: 10px;
+            width: 50%;
+            height: 200px;
+            position: sticky;
+            /* para sticky funcionar, o pai acima tem que ter algum mecanismo de scroll
+            como o body por exemplo*/
+            bottom: 0;
+            top: 0;
+            left:0;
+            right: 0;
+            /* A esquerda prevalesce por conta da linguagem do browser
+            lemos da esquerda para direita */
+        }
+
+        #div2{
+            background-color: rgba(0, 255, 0, .5);
+            padding: 10px;
+            width: 80%;
+            height: 50px;
+            position: static;
+        }
+
+        #div3{
+            background-color: rgba(0, 0, 255, .5);
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            position: static;
+            right: 0;
+            top: 20px;
+            /* se relaciona com o primeiro pai posicionado
+            quando está fixed sempre se relaciona com a viewport*/
+        }
+       
+    </style>
+
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+
+    <div id="div1">
+        1
+        <div id="div2">
+            2
+            <div id="div3">
+                3
+            </div>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum ipsa enim itaque eos aliquam maiores neque totam magnam optio at voluptatibus quisquam rerum saepe.</p>
+
+</body>
+</html>

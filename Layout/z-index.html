@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="z-index">
+    <meta name="author" content="malu.martins.br@gmail.com">
+    <meta name="keywords" content="html, css, z-index">
+    <title>z-index</title>
+
+    <style>
+
+        div{
+            border: 4px solid black;
+            padding: 12px;
+            margin-bottom: 12px;
+            background-color: rgba(0, 0, 0, .2);
+            font-size: 18px;
+            font-family: sans-serif;
+            width: 60%;
+        }
+
+        .div2.group2{
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .div2.group1{
+            background-color: white;
+            /* position: absolute; */
+            top: 100px;
+            left: 0px;
+            /* z-index: 0; */
+            /* O z-index só faz sentido com posicionamento */
+        }
+
+        .div3.group1{
+            background-color: red;
+            position: relative;
+            z-index: 2;
+        }
+
+        .div4.group1{
+            background-color: yellow;
+            position: relative;
+            bottom: 35px;
+            left: 15px;
+            z-index: 3;
+            /* Um elemento posicionado cria automaticamente
+            um contexto de empilhamento, portanto o z-index
+            não faz diferença se o div3 não tiver um z-index
+            também */
+        }
+       
+    </style>
+
+</head>
+
+<body>
+
+    <div class="div1 group1">
+        div1 grupo1
+        <div class="div2 group1">
+            div2 grupo 1
+                <div class="div3 group1">div3 grupo 1</div>
+                <div class="div4 group1">div4 grupo 1</div>
+        </div>
+    </div>
+
+    <div class="div1 group2">
+        div1 grupo2
+        <div class="div2 group2">
+            div2 grupo 2
+            <div class="div3 group2">div3 grupo 2</div>
+            <div class="div4 group2">div4 grupo 2</div>
+        </div>
+    </div>
+    
+</body>
+</html>
