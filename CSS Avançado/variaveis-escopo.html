@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Avançando com CSS - escopo de variáveis">
+        <meta name="author" content="malu.martins.br@gmail.com">
+        <meta name="keywords" content="css, frontend, variables scope">
+
+        <title>Escopo de variáveis</title>
+
+        <style>
+
+            html{
+                font-size: 200%;
+            }
+
+            :root{
+                --color: red;
+            }
+
+            p{
+                color: var(--color);
+            }
+
+            .container{
+                --color: orange;
+            }
+
+            .div1{
+                --color: green;
+                /* sobrescreve a variável do root */
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="div1">
+                <p>div1</p>
+            </div>
+            <div class="div2">
+                <p>div2</p>
+            </div>
+        </div>
+        <p>Teste fora do container</p>
+        
+    </body>
+
+</html>

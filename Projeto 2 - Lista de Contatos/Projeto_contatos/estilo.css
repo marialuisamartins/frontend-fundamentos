@@ -1,0 +1,82 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+    /* o html, elemento pai do body, e o próprio body, tem que ocupar 100% da viewport para poder centralizar o conteúdo */
+
+body {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    color: #385555;
+}
+
+.list-wrapper{
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item{
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 16px;
+}
+
+.list-item:hover{
+    background-color: #e8e8e8;
+}
+
+.list-item__image img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.list-item__content{
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.list-item__name{
+    color:#385555;
+    margin: 0;
+}
+
+.list-item__email{
+    margin: 5px 0 0;
+    color: #aaa;
+}
+
+.list-item__actions{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    opacity: 0;
+}
+
+.list-item:hover .list-item__actions{
+    opacity: .5;
+}

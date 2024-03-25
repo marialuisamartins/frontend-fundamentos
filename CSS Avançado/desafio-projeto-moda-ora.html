@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Projeto Moda Ora">
+        <meta name="author" content="malu.martins.br@gmail.com">
+        <meta name="keywords" content="html, css, frontend">
+
+        <title>Moda Ora</title>
+
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+            @font-face {
+                font-family: "roboto";
+                src:
+                local("Roboto"),
+                local("roboto"),
+                url(fonts/Roboto/Roboto-Regular.ttf) format("truetype"),
+                url(fonts/Roboto/roboto-regular-webfont.woff2) format("woff2"),
+                url(fonts/Roboto/roboto-regular-webfont.woff) format("woff");
+            }
+
+            body{
+                font-family: "roboto";
+                color: #555;
+            }
+
+            .viaoda-libre-regular{
+                font-family: "Viaoda Libre", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            
+            header{
+                background-image: url(resolucao-imagens/topo.jpg);
+                background-repeat: no-repeat;
+                background-position: top;
+                background-size: cover;
+                height: 400px;
+            }
+
+            nav{
+                display: flex;
+                justify-content: space-between;
+                /* esse space-between ta afetando as subcategorias, acho que vai ter que criar uma div pro ul e pra marca*/
+                align-items: center;
+                padding-right: 10px;
+                background-color: #162028;
+            }
+
+            nav ul{
+                color: #425564;
+                text-transform: uppercase;
+                list-style-type: none;
+                letter-spacing: 5px;
+                font-size: 15px;
+                gap: 10px;
+            }
+
+            nav .marca{
+                color: white;
+                font-size: 20px;
+                padding-left: 100px;
+            }
+
+            .apresentacao{
+                text-align: center;
+                margin: 0 200px 10px 200px;
+                font-size: 15px;
+                line-height: 2;
+            }
+
+            footer{
+                font-size: .9em;
+                text-align: center;
+                color: #6f8597;
+                background-color: #0b171f;
+                padding: 10px;
+            }
+
+            .produtos{
+                display: flex;
+                flex-direction: row;
+                align-self: center;
+                padding-top: 50px;
+                align-items: center;
+                font-size: 15px;
+            }
+
+            .detalhes{
+                color: white;
+                background-image: url(resolucao-imagens/imagens/bg_detalhe.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top;
+                padding: 100px;
+                margin: 0;
+            }
+
+            .detalhes p{
+                width: 500px;
+                font-size: 14px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav>
+            <p class="marca , viaoda-libre-regular">Moda Ora</p>
+
+            <p class="links">
+                <ul>Portfolio</ul>
+                <ul>Sobre nós</ul>
+                <ul>Contato</ul>
+            </p>
+
+        </nav>
+
+        <header>
+            <!-- contém a imagem -->
+        </header>
+
+        <main>
+
+            <div class="apresentacao">
+
+                <h1 class="viaoda-libre-regular">A escolha certa para momentos especiais</h1>
+                <p>Com uma equipe de designers talentosos e experientes, criamos roupas que combinam qualidade, estilo e conforto. Utilizamos materiais de alta qualidade e técnicas de fabricação de ponta para garantir que cada peça seja durável e bonita. Desde vestidos até blusas, calças e saias, nossas coleções são criadas para pessoas modernas que desejam se sentir confiantes e sofisticadas. Nós nos esforçamos para oferecer a melhor experiência de compra possível, garantindo a satisfação dos nossos clientes em cada etapa do processo.</p>
+
+                <div class="produtos">
+                    <div class="vest">
+                        <img src="resolucao-imagens/imagens/modelo5.jpg" alt="Homem utilizando vest romasa">
+                        <h2>vest romasa</h2>
+                        <p>Forte & carismático</p>
+                    </div>
+                    <div class="jacket"></div>
+                        <img src="resolucao-imagens/imagens/modelo2.jpg" alt="Mulher utilizando jacket fima">
+                        <h2>jacket fima</h2>
+                        <p>Personalidade marcante</p>
+                    <div class="kira"></div>
+                        <img src="resolucao-imagens/imagens/modelo4.jpg" alt="Mulher utilizando jacket black kira">
+                        <h2>jacket black kira</h2>
+                        <p>Empoderamento atraente</p>
+                </div>
+
+            </div>
+
+            <div class="detalhes">
+                <h1 class="viaoda-libre-regular">
+                    Quando os detalhes importam
+                    <br>
+                    Simplesmente Moda
+                </h1>
+
+                <p>Sabemos que, para muitas pessoas, a moda é mais do que simplesmente vestir roupas. É uma forma de expressão e uma maneira de mostrar ao mundo quem você é. É por isso que nos esforçamos para oferecer peças que atendam aos mais altos padrões de qualidade e estilo. Desde a escolha dos materiais até a criação de cada detalhe, nossa equipe se dedica a produzir roupas que se destacam pela sua elegância e sofisticação. Aqui, você encontrará peças que unem o melhor da moda com a atenção aos detalhes que faz toda a diferença. Descubra uma nova forma de se expressar através da moda conosco.</p>
+            </div>
+
+        </main>
+
+        <footer><p>Copyright &copy; modaora.com</p></footer>
+        
+    </body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Avançando com CSS - variável (custom properties)">
+        <meta name="author" content="malu.martins.br@gmail.com">
+        <meta name="keywords" content="css, frontend, variavel, custom properties">
+
+        <title>Variáveis - Custom Properties</title>
+
+        <style>
+
+            :root{
+                --header-height: 15rem;
+                /* boa prática colocar a variável aqui ao invés de por no html, já que o root não gera especificidade */
+                --main-color: #ccc;
+            }
+
+            html{
+                font-size: 62.5%;
+            }
+
+            header{
+                width: 100%;
+                background-color: rgba(255, 0, 0, 0.3);
+                font-size: 2rem;
+                /* 20px */
+                height: var(--header-height);
+                /* 150px */
+                position: fixed;
+                /* força o elemento a sair do fluxo natural do documento */
+                /* "deixa de ocupar espaço" */
+                top: 0;
+                left: 0;
+                /* fixando o header na tela */
+
+            }
+
+            main{
+                min-height: calc(100vh - var(--header-height) - 2rem);
+                /* ocupa 100% da viewport menos a altura do header e uma diminuição seguinte de 2rem */
+                background-color: var(--main-color);
+                font-size: 2rem;
+                margin-top: var(--header-height);
+            }
+
+            footer{
+                height: 10rem;
+                font-size: 2rem;
+                background-color: blue;
+            }
+
+            p{
+                --header-height: 10rem;
+                margin: calc(var(--header-height) * 2);
+                /* aplica uma margem de 20rem */
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <header>header</header>
+        <main><p>main</p></main>
+        <footer>footer</footer>
+
+    </body>
+
+</html>

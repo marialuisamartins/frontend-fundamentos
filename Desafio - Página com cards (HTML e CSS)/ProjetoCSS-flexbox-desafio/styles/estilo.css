@@ -1,0 +1,66 @@
+html, body {
+    min-height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    background-image: url(../imagens/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero{
+    padding: 1px;
+}
+
+.hero-content{
+    margin: 100px auto 0;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    text-shadow: 2px 2px 2px rgb(58, 58, 58);
+    margin-bottom: 0;
+}
+
+.hero-content p{
+    padding: 10px;
+    background-color: rgba(29, 29, 29, .7);
+    border-bottom: 2px solid;
+    /* herda a cor da fonte */
+    font-size: 15px;
+    display: inline-block;
+}
+
+.content-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
+    margin: auto;
+    background-color: white;
+    gap: 16px;
+    padding: 16px;
+}
+
+.card{
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.card img{
+    width: 100%;
+    display: block;
+}
+
+.card p{
+    background-color: #393535;
+    color: white;
+    margin: 0;
+    padding: 8px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Avançando com CSS - font-face">
+        <meta name="author" content="malu.martins.br@gmail.com">
+        <meta name="keywords" content="css, frontend, font-face">
+
+        <title>Font Face</title>
+
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+            @font-face {
+                font-family: 'nadia';
+                src: 
+                local("Nadia Serif")
+                local("Nadia-Serif")
+                url(fonts/nadia/nadia-serif.ttf) format("truetype"),
+                url(fonts/nadia/nadia-serif.woff) format("woff"),
+                url(fonts/nadia/nadia-serif.svg) format("svg");
+            }
+            /*download da fonte
+            2. Vários formatos para garantir compatibilidade com o browser
+            3. Format informa o browser antes dele baixar qual o formato do arquivo
+            para que ele não baixe a toa algo que não tem suporte
+            4. É usada a função local para que seja buscada uma fonte já baixada
+            antes de baixar desnecessariamente*/
+
+            @font-face {
+                font-family: 'chunkfiveregular';
+                src:
+                url(chunkfive/chunkfive-regular/webfontkit/chunkfive-regular-webfont.woff) format('woff'),
+                url(chunkfive/chunkfive-regular/webfontkit/chunkfive-regular-webfont.woff2) format('woff2');
+                font-weight: normal;
+                font-style: normal;
+            }
+            /* fonte baixada e convertida de otf para woff e woff2 no fontsquirrel
+            usando o Webfont Generator*/
+
+            h1{
+                /* font-family: nadia; */
+
+                font-family: chunkfiveregular, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            p{
+                .roboto-regular {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                }
+
+                line-height: 2;
+                /* melhora da legibilidade */
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1 class="roboto-regular">Font-face</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab corporis laboriosam quam neque, reprehenderit eligendi iste assumenda necessitatibus ipsam deleniti amet alias eaque facilis eius earum, expedita officia harum et aperiam accusamus corrupti. Quam distinctio ullam odio reprehenderit est sunt reiciendis natus eius ab adipisci consectetur fugiat omnis, hic voluptate praesentium tempora earum, quidem voluptas rem? Sint facere qui sed, expedita, quibusdam ad ex exercitationem velit vitae perspiciatis a. Officia fuga, deserunt modi blanditiis explicabo, a totam dignissimos fugit eos quibusdam ad sit, nihil natus ut ipsa facilis placeat incidunt laborum debitis quas voluptas sequi iste aspernatur! Veniam, voluptatibus!</p>
+
+        <a href="https://www.fontsquirrel.com">Fontsquirrel</a>
+        <br>
+        <br>
+        <a href="https://css-tricks.com/snippets/css/using-font-face-in-css/">Using font-face in css/</a>
+
+    </body>

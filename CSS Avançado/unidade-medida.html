@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Avançando com CSS - unidades de medida">
+    <meta name="author" content="malu.martins.br@gmail.com">
+    <meta name="keywords" content="css, frontend, unidades de medida, em, rem, %">
+
+    <title>Unidades de medida</title>
+
+    <style>
+
+        html{
+            font-size: 62.5%;
+            /* transforma 1em em 10px*/
+            padding-bottom: 550px;
+        }
+
+        p{
+            font-size: 3em;  /* 30 px */
+            /* usar pixels pode sobrescrever as preferências do usuário
+            1em equivale a 16px normalmente */
+
+            width: 15em;
+            /* um width de 15em seria equivalente 450 pixels
+            já que o width é relativo ao font size? verificar */
+            background-color: #ccc;
+        }
+
+        h1{
+            font-size: 3.4em;
+        }
+
+        b{
+            color: red;
+            font-size: 1em; /* 30px */
+            /* em é sempre relativo ao tamanho de fonte do elemento pai
+            se o font-size do p é 3em, que equivale a 30px, 
+            então dentro do parágrafo 1em equivale a 30px */
+            
+            font-size: 3rem; /* 30px */
+            /* rem é relativo ao tamanho de fonte do root (html)
+            1em vale 10px por conta do 62.5%
+            então 3rem equivale a 30 px */
+
+            font-size: 100%; /* 100% equivale a 30 px */
+        }
+
+        .porcentagem{
+            width: 60%;
+            height: 500px;
+            /* % é sempre relativa a largura do elemento pai */
+            background-color: yellow;
+        }
+
+        .porcentagem p{
+            background-color: orange;
+            width: 50%;
+            padding-top: 50%;
+            /* é aplicado somente à margem horizontal
+            vale para margin e padding também*/
+            font-size: 3rem;
+            /* Font size não altera as larguras e alturas
+             */
+        }
+
+        .padding-em{
+            background-color: red;
+        }
+
+        .padding-em p{
+            background-color: transparent;
+            margin: 0;
+            padding: 1em;
+            /* equivalente a 20px, já que o font-size do elemento (abaixo) é 20px*/
+            font-size: 20px;
+        }
+
+        .viewport-container{
+            font-size: 3rem;
+            width: 60vw;
+            /* 60% da largura da viewport */
+            height: 500px;
+        }
+        
+        .viewport{
+            width: 90vw;
+            height: 90%;
+            /* nesse caso, ao usar % ele se relaciona com o container, e quanto usamos vw ou vh ele se relaciona diretamente com a viewport */
+            background-color: rgba(0, 0, 255, 0.603);
+        }
+
+        .em{
+            width: 20em;
+            /* 320px */
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 1.6em;
+            /* 16px */
+        }
+
+        .ch{
+            width: 20ch;
+            /* ch equivale a largura do número zero
+            20ch equivale a: 00000000000000000000*/
+            padding: 1em;
+            margin: 1em;
+            background-color: orange;
+            font-size: 1.6em;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Unidades de medida</h1>
+
+    <p>Lorem ipsum dolor <b>texto em negrito</b> sit amet consectetur adipisicing elit. Quasi quis doloremque quam culpa voluptatibus suscipit cupiditate voluptatem necessitatibus ipsa esse!</p>
+
+    <div class="porcentagem">
+        <p>Unidade de medida %</p>
+    </div>
+
+    <div class="padding-em">
+        <p>padding com em</p>
+    </div>
+
+    <div class="porcentagem viewport-container">
+        <div class="viewport">viewport</div>
+    </div>
+
+    <div class="em">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit unde voluptatum provident minima eaque, quaerat fugiat totam. Vero, id accusamus.
+    </div>
+
+    <div class="ch">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda laborum maiores facilis aliquid fugit aperiam nemo suscipit at iste.
+    </div>
+    
+</body>
+
+</html>

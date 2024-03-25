@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Avançando com CSS - outline">
+        <meta name="author" content="malu.martins.br@gmail.com">
+        <meta name="keywords" content="css, frontend, outline">
+
+        <title>Outline</title>
+
+        <style>
+            div{
+                width: 200px;
+                height: 100px;
+                background-color: yellow;
+
+                outline: 4px solid red;
+                outline-style: dashed;
+                outline-offset: 16px;
+                /* "afasta a borda" do elemento */
+
+                /* box-sizing: border-box; */
+                /* não faz diferença no outline, só no border */
+
+                margin: 100px auto;
+            }
+
+            div:hover{
+                outline-width: 10px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div>outline</div>
+    </body>
